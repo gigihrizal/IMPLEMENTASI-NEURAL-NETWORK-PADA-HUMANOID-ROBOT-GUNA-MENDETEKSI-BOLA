@@ -1,0 +1,45 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/robotstadium/protos/RobotstadiumSoccerField.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/softbank/nao/protos/Nao.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/balls/protos/RobocupSoccerBall.proto"
+
+WorldInfo {
+  window "generic_window"
+  gravity 9.8
+  basicTimeStep 50
+}
+Viewpoint {
+  orientation 0.2844987959272639 -0.2849754510128803 -0.9153411535793321 4.532596186061867
+  position 2.93564448005648 -4.693804006142222 2.0236666875581886
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RobotstadiumSoccerField {
+}
+Nao {
+  translation 2.79 -2.99 0.334
+  rotation 0 0 1 1.5708
+  controller "my_controller"
+  cameraWidth 400
+  cameraHeight 400
+}
+Nao {
+  translation 3.38 -1.46 0.344
+  rotation 0 0 -1 2.87979
+  name "NAO(1)"
+  controller "<none>"
+}
+Nao {
+  translation 2.3519 -1.46947 0.334
+  rotation 0 0 1 -0.261795307179586
+  name "NAO(2)"
+  controller "<none>"
+}
+RobocupSoccerBall {
+  translation 2.82 -1.45 0.04
+}
